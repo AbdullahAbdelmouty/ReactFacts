@@ -1,15 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600&display=swap');
 .App{
   width: 550px;
   display: flex;
   flex-direction: column;
 }
+.logo{
+  display: flex;
+  align-items: center;
+}
 .img{
   width: 40px;
   height: 40px;
 }
-.logo{
+.head{
+  font-family: 'Inter',sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.toggle{
   display: flex;
   align-items: center;
+}
+.btn{
+  border: 0;
+  background-color: transparent;
+  display: flex;
+}
+.darkOn{
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: #FFFFFF;
+}
+.darkOff{
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: #D5D4D8;
+}
+.lightOn{
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: #2B283A;
+}
+.lightOff{
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: #D5D4D8;
 }
 .navContanier{
   width: 550px;
@@ -17,26 +52,47 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #21222b;
-  color: white;
+  color: #00ABCA;
   padding: 0 20px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.navContanierDark{
+  width: 550px;
+  height: 91px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #21222b;
+  color: #00ABCA;
+  padding: 0 20px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 .main{
   width: 550px;
   height: 459px;
-  background-color: #272d34;
-  background-image: url(./components/reactjs-icon\ 2.png);
+  color: #2B283A;
+  font-family: 'Inter',sans-serif;
+  background-image: url(./components/one.png);
   background-repeat: no-repeat;
   background-position: right center;
-  color: white;
   padding: 50px 20px;
 }
-
-.main ul li{
-  list-style: none;
+.mainDark{
+  width: 550px;
+  height: 459px;
+  font-family: 'Inter',sans-serif;
+  background-color: #272d34;
+  color: white;
+  background-image: url(./components/two.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 50px 20px;
 }
-.main ul li::before {
-  content: "\2022";
-  width: 10px;
-  height: 10px;
+.mainText{
+  /* color: #2B283A; */
+  font-size: 39.06px;
+}
+.fact{
+  list-style: none;
+  padding-bottom: 20px;
 }

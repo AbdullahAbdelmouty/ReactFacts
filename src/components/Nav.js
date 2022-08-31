@@ -1,12 +1,13 @@
 import logo from './/logo192.png'
-function Nav(){
+import {FaToggleOn,FaToggleOff} from 'react-icons/fa';
+function Nav(props){
     return(
-        <div className='navContanier'>
+        <div className= {props.mode? "navContanier": "navContanierDark"}>
         <div className='logo'>
         <img src={logo} alt='logo' className='img' />
-        <h3>ReactFacts</h3>
+        <h3 className='head'>ReactFacts</h3>
         </div>
-        <h4>React Cours-project1</h4>
+        <div className='toggle'><span className={props.mode? "darkOff":"darkOn"}>Dark</span><button onClick={props.changeMode} className='btn'>{props.mode? <FaToggleOn size={'2em'} />:<FaToggleOff size={'2em'} color={"white"} />}</button><span className={props.mode? "lightOn":"lightOff"}>light</span></div>
         </div>
     )
 }
